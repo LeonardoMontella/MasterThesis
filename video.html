@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video del Progetto</title>
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #6a706e;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3c403f;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background-color: #3f3f3f;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        video {
+            width: 320px;
+            height: 570px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">&larr; Torna alla Home</a>
+    <h1>Project Videos</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="greet.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+        <video autoplay loop muted>
+            <source src="knife3.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+    </div>
+
+    <a href="https://drive.google.com/drive/folders/1znlLBfmx6MZmGqiPkQKM-d0oDm05VvIs?usp=share_link" class="button">Media Folder</a>
+</body>
+</html>
